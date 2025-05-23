@@ -60,10 +60,10 @@ function App() {
 
   const deleteFinishedTask = () => {
     let newTodos = todos.filter((item) => {
-      return item.isCompleted == true;
+      return item.isCompleted == false;
     });
 
-    if (newTodos.length == 0) {
+    if (newTodos.length == todos.length) {
       alert("No finished task to delete");
       return;
     }
