@@ -1,0 +1,20 @@
+@import "tailwindcss"; 
+/* Custom scrollbar for the .content div */
+.content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.content::-webkit-scrollbar-track {
+  background: #f3e8ff; /* light purple track */
+  border-radius: 4px;
+}
+
+.content::-webkit-scrollbar-thumb {
+  background-color: #9333ea; /* purple thumb */
+  border-radius: 4px;
+  border: 2px solid #f3e8ff; /* border to blend thumb with track */
+}
+
+.content::-webkit-scrollbar-thumb:hover {
+  background-color: #7e22ce; /* darker on hover */
+}
