@@ -142,14 +142,14 @@ function App() {
         <div className="buttons">
           <button
             type="button"
-            className="button border-1 py-1 px-2 rounded-md text-xs mx-2 bg-purple-700 text-white hover:bg-black"
+            className="cursor-pointer button border-1 py-1 px-2 rounded-md text-xs mx-2 bg-purple-700 text-white hover:bg-black"
             onClick={(e) => handleEdit(item._id)}
           >
             Edit
           </button>
           <button
             type="button"
-            className="button border-1 py-1 px-2 rounded-md text-xs mx-2 bg-purple-700 text-white hover:bg-black"
+            className="cursor-pointer button border-1 py-1 px-2 rounded-md text-xs mx-2 bg-purple-700 text-white hover:bg-black"
             onClick={(e) => handleDelete(item._id)}
           >
             Delete
@@ -193,7 +193,7 @@ function App() {
               type="submit"
               value="Save"
               // disabled={todo.length <= 2}
-              className="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2 mb-2 disabled:bg-slate-600 dark:bg-purple-600 dark:hover:bg-purple-900 dark:focus:ring-purple-900"
+              className="cursor-pointer focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2 mb-2 disabled:bg-slate-600 dark:bg-purple-600 dark:hover:bg-purple-900 dark:focus:ring-purple-900"
             />
           </form>
         </div>
@@ -219,7 +219,7 @@ function App() {
             <div className="button">
               <button
                 onClick={deleteFinishedTask}
-                className="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-2 py-1 disabled:bg-slate-600 dark:bg-purple-600 dark:hover:bg-purple-900 dark:focus:ring-purple-900"
+                className="cursor-pointer focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-2 py-1 disabled:bg-slate-600 dark:bg-purple-600 dark:hover:bg-purple-900 dark:focus:ring-purple-900"
               >
                 Delete Finished Tasks
               </button>
@@ -228,7 +228,7 @@ function App() {
             <div className="button">
               <button
                 onClick={deleteAllTask}
-                className="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-2 py-1 disabled:bg-slate-600 dark:bg-purple-600 dark:hover:bg-purple-900 dark:focus:ring-purple-900"
+                className="cursor-pointer focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-2 py-1 disabled:bg-slate-600 dark:bg-purple-600 dark:hover:bg-purple-900 dark:focus:ring-purple-900"
               >
                 Delete All Tasks
               </button>
